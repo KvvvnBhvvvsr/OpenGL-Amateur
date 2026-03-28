@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		001B60832F78176C00E209C2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 001B60822F78176C00E209C2 /* libglfw3.a */; };
+		001B60852F78177600E209C2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001B60842F78177600E209C2 /* OpenGL.framework */; };
+		001B60872F78177900E209C2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001B60862F78177900E209C2 /* Cocoa.framework */; };
+		001B60892F78178000E209C2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001B60882F78178000E209C2 /* IOKit.framework */; };
+		001B608B2F78178500E209C2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001B608A2F78178500E209C2 /* CoreVideo.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		001B60752F78168F00E209C2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +28,11 @@
 
 /* Begin PBXFileReference section */
 		001B60772F78168F00E209C2 /* OpenGL-Amateur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenGL-Amateur"; sourceTree = BUILT_PRODUCTS_DIR; };
+		001B60822F78176C00E209C2 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../../GFX/glfw-3.4/build/src/Debug/libglfw3.a"; sourceTree = "<group>"; };
+		001B60842F78177600E209C2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		001B60862F78177900E209C2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		001B60882F78178000E209C2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		001B608A2F78178500E209C2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001B608B2F78178500E209C2 /* CoreVideo.framework in Frameworks */,
+				001B60892F78178000E209C2 /* IOKit.framework in Frameworks */,
+				001B60872F78177900E209C2 /* Cocoa.framework in Frameworks */,
+				001B60852F78177600E209C2 /* OpenGL.framework in Frameworks */,
+				001B60832F78176C00E209C2 /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				001B60792F78168F00E209C2 /* OpenGL-Amateur */,
+				001B60812F78176C00E209C2 /* Frameworks */,
 				001B60782F78168F00E209C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +74,18 @@
 				001B60772F78168F00E209C2 /* OpenGL-Amateur */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		001B60812F78176C00E209C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				001B608A2F78178500E209C2 /* CoreVideo.framework */,
+				001B60882F78178000E209C2 /* IOKit.framework */,
+				001B60862F78177900E209C2 /* Cocoa.framework */,
+				001B60842F78177600E209C2 /* OpenGL.framework */,
+				001B60822F78176C00E209C2 /* libglfw3.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +276,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/a/Documents/GFX/glfw-3.4/include",
+					"/Users/a/Documents/Git/OpenGL-Amateur/OpenGL-Amateur/glad/include",
+				);
+				LIBRARY_SEARCH_PATHS = "/Users/a/Documents/GFX/glfw-3.4/build/src/Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/a/Documents/GFX/glfw-3.4/include",
+					"/Users/a/Documents/Git/OpenGL-Amateur/OpenGL-Amateur/glad/include",
+				);
+				LIBRARY_SEARCH_PATHS = "/Users/a/Documents/GFX/glfw-3.4/build/src/Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
