@@ -279,6 +279,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/a/Documents/GFX/glfw-3.4/include",
 					"/Users/a/Documents/Git/OpenGL-Amateur/OpenGL-Amateur/glad/include",
+					"/Users/a/Documents/Git/OpenGL-Amateur/OpenGL-Amateur/include",
 				);
 				LIBRARY_SEARCH_PATHS = "/Users/a/Documents/GFX/glfw-3.4/build/src/Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +293,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/Users/a/Documents/GFX/glfw-3.4/include",
 					"/Users/a/Documents/Git/OpenGL-Amateur/OpenGL-Amateur/glad/include",
+					"/Users/a/Documents/Git/OpenGL-Amateur/OpenGL-Amateur/include",
 				);
 				LIBRARY_SEARCH_PATHS = "/Users/a/Documents/GFX/glfw-3.4/build/src/Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
